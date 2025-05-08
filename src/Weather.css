@@ -1,0 +1,107 @@
+/* Main container for the weather app */
+.weather-container {
+    background-image: url('./assets/clear.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    transition: background-image 0.5s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Background images based on weather type */
+  .sunny {
+    background-image: url('./assets/sunny.png');
+  }
+  
+  .cloudy {
+    background-image: url('./assets/cloudy.png');
+  }
+  
+  .rainy {
+    background-image: url('./assets/rainy.png');
+  }
+  
+  .snow {
+    background-image: url('./assets/snow.png');
+  }
+  
+  .thunder {
+    background-image: url('./assets/thunder.png');
+  }
+
+  .haze {
+    background-image: url('./assets/haze.png');
+  }
+
+  
+  
+  /* Search bar styling */
+  .search-bar input {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    width: 250px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Location and date */
+  .location-box {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .location {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .date {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+  
+  /* Weather details */
+  .weather-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .temp {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .weather {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) {
+    .temp {
+      font-size: 2.2rem;
+    }
+  
+    .location {
+      font-size: 1.5rem;
+    }
+  
+    .search-bar input {
+      width: 80%;
+    }
+  }
+  
