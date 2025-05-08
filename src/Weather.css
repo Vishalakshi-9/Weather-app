@@ -43,8 +43,8 @@
 .search-button {
   padding: 10px;
   font-size: 16px;
-  background-color: #0077ff;
-  color: white;
+  background-color: white;
+  color: black;
   border: 2px solid #0077ff;
   border-left: none;
   border-radius: 0 5px 5px 0;
@@ -53,7 +53,7 @@
 }
 
 .search-button:hover {
-  background-color: #005fcc;
+  background-color: light-blue;
 }
 
 
