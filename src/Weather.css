@@ -41,13 +41,15 @@
     background-image: url('./assets/haze.png');
   }
 .search-button {
-  padding: 10px 15px;
-  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
   background-color: #0077ff;
   color: white;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid #0077ff;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .search-button:hover {
