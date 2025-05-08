@@ -50,6 +50,19 @@ const Weather = () => {
     }
   };
 
+  const searchClick = () => {
+  if (city !== '') {
+    fetch(`${api.base}/weather?q=${city}&units=metric&appid=${api.key}`)
+      .then(res => res.json())
+      .then(result => {
+        setWeather(result);
+        setCity('');
+        console.log(result);
+      });
+  }
+};
+
+
   const dateBuilder = (d) => {
     let months = [
       "January", "February", "March", "April", "May", "June",
@@ -75,6 +88,7 @@ const Weather = () => {
           onChange={(e) => setCity(e.target.value)}
           onKeyPress={search}
         />
+         <button className="search-button" onClick={searchClick}>Search</button>
       </div>
 
       {weather.main && (
