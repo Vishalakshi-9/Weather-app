@@ -57,6 +57,7 @@ const Weather = () => {
       .then(result => {
         setWeather(result);
         setCity('');
+        updateBackground(result.weather[0].main);
         console.log(result);
       });
   }
